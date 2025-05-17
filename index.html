@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+		.gradient-box {
+  			align-items: center;
+  			background-image: linear-gradient(to right, #054f7d,#ccc23d,#00a7cf,#861a54,#054f7d);
+  			background-size: 600%;
+  			background-position: 0 0;
+  			height: 100dvh;
+            width: 100dvw;
+  			justify-content: center;
+  			animation-duration: 20s;
+  			animation-iteration-count: infinite;
+  			animation-name: gradient;
+            position: relative;
+		}
+		h1, h2 {
+  			color: rgba(245, 245, 245, 0.7);
+  			font-size: 8dvh;
+  			text-align: center;
+  			text-transform: uppercase;
+            font-family:  'DM Serif Display', serif;
+		}
+        h1 {
+            padding-top: 33dvh;
+        }
+        .opacity {
+            color: black;
+            opacity: 0;
+            height: 100dvh;
+            width: 100dvw;
+            
+        }
+       .gradient-box::after {
+            background: rgba(0,0,0,0.25);
+            position: absolute;
+        }
+		@keyframes gradient {
+    		0%   {background-position: 0 0;}
+    		25%  {background-position: 50% 0;}
+    		50%  {background-position: 90% 0;}
+    		60%  {background-position: 60%;}
+    		75%  {background-position: 40%;}
+    		100% {background-position: 0 0;}
+		}
+	</style>
+</head>
+<body>
+    <div class="gradient-box">
+        <h1 id="1">CODA!</h1>
+        <h2 id="2">We begin soon.</h2>
+        <h2 id="3">17.07</h2>
+    </div>
+</body>
+</html>
